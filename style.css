@@ -38,6 +38,8 @@ nav {
 
   justify-content: center;
 
+  align-items: center;
+
   gap: 15px;
 
   padding: 12px;
@@ -55,6 +57,12 @@ nav {
 }
 
 nav a {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
 
   color: #00f0ff;
 

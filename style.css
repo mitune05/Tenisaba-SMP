@@ -78,3 +78,90 @@ h1, h2 {
   gap: 10px;
   margin: 20px;
 }
+
+/* ホーム */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+
+  max-width: 1300px;
+  margin: auto;
+  padding: 80px 40px;
+}
+
+/* 左 */
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #00f0ff;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* ボタン */
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+/* 右画像 */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 550px;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 0 30px rgba(0,255,255,0.3),
+    0 0 60px rgba(0,255,255,0.15);
+
+  animation: float 4s ease-in-out infinite;
+}
+
+/* 浮遊アニメ */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* スマホ */
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .hero-text h1 {
+    font-size: 50px;
+  }
+}

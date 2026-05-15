@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #05060a;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+/* ナビ */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 12px;
+  background: rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: #00f0ff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background: rgba(0,240,255,0.2);
+}
+
+/* カード */
+.card {
+  background: rgba(10, 12, 25, 0.7);
+  border: 1px solid rgba(0,255,255,0.2);
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  border: 1px solid #00f0ff;
+  color: #00f0ff;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #00f0ff;
+  color: black;
+}
+
+/* コピー */
+.copy {
+  cursor: pointer;
+  color: #00f0ff;
+  font-weight: bold;
+}
+
+/* 見出し */
+h1, h2 {
+  color: #00f0ff;
+}
+
+/* ジャンプ */
+.jump {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px;
+}
